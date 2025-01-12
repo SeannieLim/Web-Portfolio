@@ -87,6 +87,7 @@ section {
   height: 400px;
   width: 400px;
   margin-left: auto 0;
+  transition: none;
 }
 
 .section_text {
@@ -105,6 +106,7 @@ section {
 .section_text_p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  animation: moveText 3s ease-in-out infinite;
 }
 
 .title {
@@ -169,4 +171,16 @@ section {
 
 .btn-container {
   gap: 1rem;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
